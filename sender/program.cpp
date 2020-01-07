@@ -11,7 +11,7 @@ int main(int argc, char *argv[], char *envp[])
     char* group = argc > 1 ? argv[1] : "239.255.255.250";  // default is SSDP address: https://en.wikipedia.org/wiki/Simple_Service_Discovery_Protocol
     int port = argc > 2 ? atoi(argv[2]) : 35001;
 
-    puts("Console app for UDP multicast demostration. Command line auruments: group and port");
+    puts("Console app for UDP multicast demostration. Command line auruments: IPv4 address and port");
     printf_s("ex: sender %s %d\r\n", group, port);
    
     // init Winsock DLL

@@ -12,7 +12,7 @@ int main(int argc, char* argv[], char* envp[])
                                                            // https://en.wikipedia.org/wiki/Simple_Service_Discovery_Protocol
     int port = argc > 2 ? atoi(argv[2]) : 35001;
 
-    puts("Console app for UDP multicast demostration. Command line auruments: group and port");
+    puts("Console app for UDP multicast demostration. Command line auruments: IPv4 address and port");
     printf_s("ex: receiver %s %d\r\n", group, port);
 
     // init Winsock DLL
